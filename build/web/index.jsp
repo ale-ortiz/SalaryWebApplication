@@ -8,15 +8,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Simple Salary Calculator</title>
         <link rel="stylesheet" type="text/css" href="styles.css"
     </head>
     
     <body>
-        <h1>Hello World!</h1>
-        
+        <h2>Simple Salary Calculator</h2>
+        <hr>
         <form name="salaryForm" action="results.jsp" method="post">
-            <table>
+            <table class="t1">
                  <tbody>
                         <tr>
                             <td>Hours Worked:</td>
@@ -36,8 +36,10 @@
                         </tr>
                  </tbody>
             </table>
+            <div>
             <input type="reset" value="Clear" id="clear">
-            <input type="submit" value="Submit" id="submit"
+            <input type="submit" value="Submit" id="submit">
+            </div>
         </form>
     </body>
 </html>

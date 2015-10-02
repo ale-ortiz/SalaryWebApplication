@@ -1,10 +1,88 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 1, 2015, 7:21:10 PM
-    Author     : aleortiz
-*/
-
+body {
+			color: white;
+			background-color: maroon;
+			font-size: 15pt;
+			font-family: veranda; geneva, arial, halvetica, sans-serif;
+			}
+			
+                        h2 { text-align: center }
+                        
+                        table { 
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                       div {
+                            text-align: center;
+                        }
+                        .t2 {
+                            border: black;
+                            color: black;
+                            background: white;
+                    
+                        }
+                        .td1 {
+                            text-align: right
+                        }    
+                        .td2 {
+                            text-align: left
+                        }
+                         .td3 {
+                            text-align: right
+                        }    
+                        .td4 {
+                            text-align: left
+                        }
+                         .td5 {
+                            text-align: right
+                        }    
+                        .td6 {
+                            text-align: left
+                        }
+                         .td7 {
+                            text-align: right
+                        }    
+                        .td8 {
+                            text-align: left
+                        }
+                         .td9 {
+                            text-align: right
+                        }    
+                        .td10 {
+                            text-align: left
+                        }
+                         .td11 {
+                            text-align: right
+                        }    
+                        .td12 {
+                            text-align: left
+                        }
+                         .td13 {
+                            text-align: right
+                        }    
+                        .td14 {
+                            text-align: left
+                        }
+                         .td15 {
+                            text-align: right
+                        }    
+                        .td16 {
+                            text-align: left
+                        }
+                         .td17 {
+                            text-align: right
+                        }    
+                        .td18 {
+                            text-align: left
+                        }
+                         .td19 {
+                            text-align: right
+                        }    
+                        .td20 {
+                            text-align: left
+                        }
+                         .td15 {
+                            text-align: right
+                        }    
+                        .td16 {
+                            text-align: left
+                        }

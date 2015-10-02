@@ -4,12 +4,13 @@
     Author     : aleortiz
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Salary Info</title>
         <link rel="stylesheet" type="text/css" href="styles.css"
     </head>
     <%
@@ -17,8 +18,8 @@
         double hourlyPay = Double.parseDouble(request.getParameter("pay"));
         double preTaxDeduct = Double.parseDouble(request.getParameter("pre"));
         double postTaxDeduct = Double.parseDouble(request.getParameter("post"));
-        double regularHours = 0;
-        double otHours = 0;
+        int regularHours = 0;
+        int otHours = 0;
         double otPayRate = 0;
         double otPay = 0;
         double regularPay = 0;
@@ -50,50 +51,56 @@
         netPay = postTaxPay - postTaxDeduct ;      
                 %>
     <body>
-        <h1>Hello World!</h1>
-        <table>
+        <h2>Salary Info</h2>
+        <hr>
+        <div>
+        <table class="t2" border="1">
                  <tbody>
                         <tr>
-                            <td>Total Hours Worked:</td>
-                            <td><%=hoursWorked %></td>
+                            <td class="td1">Total Hours Worked:</td>
+                            <td class="td2"><%=hoursWorked %></td>
                         </tr>
                         <tr>
-                            <td>Hourly Rate:</td>
-                            <td><%=hourlyPay %></td>
+                            <td class="td3">Hourly Rate:</td> 
+                            <td class="td4"><%=hourlyPay %></td>
                         </tr>
                         <tr>
-                            <td># Hours Overtime:</td>
-                            <td><%=otHours %></td>
+                            <td class="td5"># Hours Overtime:</td>
+                            <td class="td6"><%=otHours %></td>
                         </tr>
                         <tr>
-                            <td>Overtime Hourly Rate:</td>
-                            <td><%=otPayRate %></td>
+                            <td class="td7">Overtime Hourly Rate:</td>
+                            <td class="td8"><%=otPayRate %></td>
                         </tr>
                         <tr>
-                            <td>Gross Pay:</td>
-                            <td><%=grossPay %></td>
+                            <td class="td9">Gross Pay:</td>
+                            <td class="td10"><%=grossPay %></td>
                         </tr>
                         <tr>
-                            <td>Pre-tax Deduct:</td>
-                            <td><%=preTaxDeduct %></td>
+                            <td class="td11">Pre-tax Deduct:</td>
+                            <td class="td12"><%=preTaxDeduct %></td>
                         </tr>
                         <tr>
-                            <td>Tax Amount:</td>
-                            <td><%=taxAmount %></td>
+                            <td class="td13">Tax Amount:</td>
+                            <td class="td14"><%=taxAmount %></td>
                         </tr>
                         <tr>
-                            <td>Post-tax Pay:</td>
-                            <td><%=postTaxPay %></td>
+                            <td class="td15">Post-tax Pay:</td>
+                            <td class="td16"><%=postTaxPay %></td>
                         </tr>
                         <tr>
-                            <td>Post-tax Deduct:</td>
-                            <td><%=postTaxDeduct %></td>
+                            <td class="td17">Post-tax Deduct:</td>
+                            <td class="td18"><%=postTaxDeduct %></td>
                         </tr>
                         <tr>
-                            <td>Net Pay:</td>
-                            <td><%=netPay %></td>
+                            <td class="td19">Net Pay:</td>
+                            <td class="td20"><%=netPay %></td>
                         </tr>
                  </tbody>
             </table>
+            <p>
+			<a href="index.jsp" title="Home">Home</a>
+            </p>
+        </div>
     </body>
 </html>

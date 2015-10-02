@@ -1,43 +1,44 @@
 <%-- 
-    Document   : index
-    Created on : Oct 1, 2015, 7:03:49 PM
+    Document   : results
+    Created on : Oct 1, 2015, 7:45:55 PM
     Author     : aleortiz
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" type="text/css" href="styles.css"
     </head>
-    
+    <%
+        String hoursWorked = request.getParameter("hours");
+        String hourlyPay = request.getParameter("pay");
+        String preTax = request.getParameter("pre");
+        String postTax = request.getParameter("post");
+        
+                %>
     <body>
         <h1>Hello World!</h1>
-        
-        <form name="salaryForm" action="results.jsp" method="post">
-            <table>
+        <table>
                  <tbody>
                         <tr>
                             <td>Hours Worked:</td>
-                            <td><input type="text" name="hours" value="" size="50"</td>
+                            <td><%=hoursWorked %></td>
                         </tr>
                         <tr>
                             <td>Hourly Pay:</td>
-                            <td><input type="text" name="pay" value="" size="50"</td>
+                            <td><%=hourlyPay %></td>
                         </tr>
                         <tr>
                             <td>Pre-tax Deduct:</td>
-                            <td><input type="text" name="pre" value="" size="50"</td>
+                            <td><%=preTax %></td>
                         </tr>
                         <tr>
                             <td>Post-tax Deduct:</td>
-                            <td><input type="text" name="post" value="" size="50"</td>
+                            <td><%=postTax %></td>
                         </tr>
                  </tbody>
             </table>
-            <input type="reset" value="Clear" id="clear">
-            <input type="submit" value="Submit" id="submit"
-        </form>
     </body>
 </html>
